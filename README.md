@@ -3,8 +3,63 @@
 For Java 11 we need to download Amazon Corretto - https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html
 Corretto is a distribution of Open JDK with patches included by Amazon that are not yet integrated in the corresponding OpenJDK update projects. We focus on patches that improve performance or stability in OpenJDK, chosen based on Amazon's observations running large services.
 
-Tips :
-## Standard Naming Conventions in Java
+## Java 11 Features :
+
+### Running Java File with single command
+
+<pre><code>
+java "C:\Users\Yashwanth\Documents\Alpha Geek\Yash_World\JDK11_17\src\com\yash\java\HelloJava11.java"
+</code></pre>
+
+
+### Java String Methods
+
++ <b>IsBlank()</b>
+
+This instance method returns a boolean value. Empty Strings and Strings with only white spaces are treated as blank.
+
+<pre><code>
+    System.out.println(" ".isBlank()); //true
+    String yash = "Yashwanth";
+    System.out.println(yash.isBlank()); //false
+    String s1 = "";
+    System.out.println(s1.isBlank()); //true
+</code></pre>
+
+
++ <b>lines()</b>
+
+This method returns a stream of strings, which is a collection of all substrings split by lines.
+
+<pre><code>
+     String val = "Yashwanth\nAlphaGeek\nVampire"; 
+     System.out.println(val);
+     System.out.println(val.lines().collect(Collectors.toList()));
+</code></pre>
+
++ <b>strip(), stripLeading(), stripTrailing()</b>
+
+Removes the white space from both, beginning and the end of string.
+
+<pre><code>
+     String val = "Yashwanth\nAlphaGeek\nVampire"; 
+     System.out.println(val);
+     System.out.println(val.lines().collect(Collectors.toList()));
+</code></pre>
+
++ <b>repeat(int)</b>
+
+The repeat method simply repeats the string that many numbers of times as mentioned in the method in the form of an int.
+
+<pre><code>
+        String repeatStr = "Never Give Up\n";
+        String repeatVal = repeatStr.repeat(2);
+	System.out.println(repeatVal);
+</code></pre>
+
+
+## Tips :
+### Standard Naming Conventions in Java
 
 <b>Package :</b>  Always lower case, use your internet domain name, reversed
 
