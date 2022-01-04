@@ -8,7 +8,7 @@ Corretto is a distribution of Open JDK with patches included by Amazon that are 
 ### Running Java File with single command
 
 <pre><code>
-java "C:\Users\Yashwanth\Documents\Alpha Geek\Yash_World\JDK11_17\src\com\yash\java\HelloJava11.java"
+<b>java</b> "C:\Users\Yashwanth\Documents\Alpha Geek\Yash_World\JDK11_17\src\com\yash\java\HelloJava11.java"
 </code></pre>
 
 
@@ -19,11 +19,11 @@ java "C:\Users\Yashwanth\Documents\Alpha Geek\Yash_World\JDK11_17\src\com\yash\j
 This instance method returns a boolean value. Empty Strings and Strings with only white spaces are treated as blank.
 
 <pre><code>
-    System.out.println(" ".isBlank()); //true
+    System.out.println(" ".<b>isBlank()</b>); //true
     String yash = "Yashwanth";
-    System.out.println(yash.isBlank()); //false
+    System.out.println(yash.<b>isBlank()</b>); //false
     String s1 = "";
-    System.out.println(s1.isBlank()); //true
+    System.out.println(s1.<b>isBlank()</b>); //true
 </code></pre>
 
 
@@ -34,7 +34,7 @@ This method returns a stream of strings, which is a collection of all substrings
 <pre><code>
      String val = "Yashwanth\nAlphaGeek\nVampire"; 
      System.out.println(val);
-     System.out.println(val.lines().collect(Collectors.toList()));
+     System.out.println(val.<b>lines()</b>.collect(Collectors.toList()));
 </code></pre>
 
 + <b>strip(), stripLeading(), stripTrailing()</b>
@@ -42,9 +42,10 @@ This method returns a stream of strings, which is a collection of all substrings
 Removes the white space from both, beginning and the end of string.
 
 <pre><code>
-     String val = "Yashwanth\nAlphaGeek\nVampire"; 
-     System.out.println(val);
-     System.out.println(val.lines().collect(Collectors.toList()));
+        String firstName=" Yashwanth ";
+	String lastName=".P";
+	System.out.println("Before stripping:"+firstName+lastName);
+	System.out.println("After stripping:"+firstName.<b>strip()</b>+lastName);
 </code></pre>
 
 + <b>repeat(int)</b>
@@ -53,7 +54,7 @@ The repeat method simply repeats the string that many numbers of times as mentio
 
 <pre><code>
         String repeatStr = "Never Give Up\n";
-        String repeatVal = repeatStr.repeat(2);
+        String repeatVal = repeatStr.<b>repeat(2)</b>;
 	System.out.println(repeatVal);
 </code></pre>
 
