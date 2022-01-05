@@ -58,6 +58,54 @@ The repeat method simply repeats the string that many numbers of times as mentio
 	System.out.println(repeatVal);
 </code></pre>
 
+### Local-Variable Syntax for Lambda Parameters
+
+Declaring of formal parameters of an implicitly typed lambda expression
+
+<pre><code>
+        Adder adder=(<b>double</b> a, <b>int</b> b)->((int)a+b);
+	System.out.println(adder.add(10, 10));
+</code></pre>
+
+### Nested Based Access Control
+
+<pre><code>
+public class Main {
+ 
+    public void myPublic() {
+    }
+ 
+    private void myPrivate() {
+    }
+ 
+    class Nested {
+ 
+        public void nestedPublic() {
+            <b>myPrivate();</b>
+        }
+    }
+}
+</code></pre>
+
+private method of the main class is accessible from the above-nested class in the above manner.
+
+### HTTP Client
+Java 11 standardizes the Http CLient API.
+The new API supports both HTTP/1.1 and HTTP/2. It is designed to improve the overall performance of sending requests by a client and receiving responses from the server. It also natively supports WebSockets.
+
+### Reading/Writing Strings to and from the Files
+
+Java 11 strives to make reading and writing of String convenient
+
++ readString()
++ writeString()
+
+<pre><code>
+        Path path = Files.writeString(Files.createTempFile("test", ".txt"), "Yashwanth");
+	System.out.println(path);
+	String s = Files.readString(path);
+	System.out.println(s);
+</code></pre>
 
 ## Tips :
 ### Standard Naming Conventions in Java
