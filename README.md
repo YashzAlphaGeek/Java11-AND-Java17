@@ -11,6 +11,8 @@ Corretto is a distribution of Open JDK with patches included by Amazon that are 
 <b>java</b> "C:\Users\Yashwanth\Documents\Alpha Geek\Yash_World\JDK11_17\src\com\yash\java\HelloJava11.java"
 </code></pre>
 
+![](https://github.com/YashzAlphaGeek/Java11-AND-Java17/blob/master/Images/SingleJavaCommand.png)
+
 
 ### Java String Methods
 
@@ -57,6 +59,8 @@ The repeat method simply repeats the string that many numbers of times as mentio
         String repeatVal = repeatStr.<b>repeat(2)</b>;
 	System.out.println(repeatVal);
 </code></pre>
+
+![](https://github.com/YashzAlphaGeek/Java11-AND-Java17/blob/master/Images/StringMethodsOutcome.png)
 
 ### Local-Variable Syntax for Lambda Parameters
 
@@ -106,6 +110,8 @@ Java 11 strives to make reading and writing of String convenient
 	String s = Files.readString(path);
 	System.out.println(s);
 </code></pre>
+
+![](https://github.com/YashzAlphaGeek/Java11-AND-Java17/blob/master/Images/ReadingAndWritingOfFileOutcome.png)
 
 ## Tips :
 ### Standard Naming Conventions in Java
