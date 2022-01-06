@@ -21,7 +21,7 @@ Frequently used Java features are covered as part of this page
 
 + <b>IsBlank()</b>
 
-This instance method returns a boolean value. Empty Strings and Strings with only white spaces are treated as blank.
+	This instance method returns a boolean value. Empty Strings and Strings with only white spaces are treated as blank.
 
 <pre><code>
     System.out.println(" ".<b>isBlank()</b>); //true
@@ -34,7 +34,7 @@ This instance method returns a boolean value. Empty Strings and Strings with onl
 
 + <b>lines()</b>
 
-This method returns a stream of strings, which is a collection of all substrings split by lines.
+	This method returns a stream of strings, which is a collection of all substrings split by lines.
 
 <pre><code>
      String val = "Yashwanth\nAlphaGeek\nVampire"; 
@@ -44,7 +44,7 @@ This method returns a stream of strings, which is a collection of all substrings
 
 + <b>strip(), stripLeading(), stripTrailing()</b>
 
-Removes the white space from both, beginning and the end of string.
+	Removes the white space from both, beginning and the end of string.
 
 <pre><code>
         String firstName=" Yashwanth ";
@@ -55,7 +55,7 @@ Removes the white space from both, beginning and the end of string.
 
 + <b>repeat(int)</b>
 
-The repeat method simply repeats the string that many numbers of times as mentioned in the method in the form of an int.
+	The repeat method simply repeats the string that many numbers of times as mentioned in the method in the form of an int.
 
 <pre><code>
         String repeatStr = "Never Give Up\n";
@@ -67,7 +67,7 @@ The repeat method simply repeats the string that many numbers of times as mentio
 
 ### Local-Variable Syntax for Lambda Parameters
 
-Declaring of formal parameters of an implicitly typed lambda expression
+	Declaring of formal parameters of an implicitly typed lambda expression
 
 <pre><code>
         Adder adder=(<b>double</b> a, <b>int</b> b)->((int)a+b);
@@ -176,31 +176,31 @@ Pattern matching for switch statements and expressions. Since this is a preview 
 
 <b>Package :</b>  Always lower case, use your internet domain name, reversed
 
-Eg : java.lang
+	Eg : java.lang
 
 <b>Classes :</b> CamelCase , Class names should be nouns, Start with capital letter
 
-Eg : LinkedList, Main
+	Eg : LinkedList, Main
 
 <b>Inerfaces :</b> CamelCase , Consider what objects implementing the interface will become of what they will be able to do
 
-Eg : Comparbale
+	Eg : Comparbale
 
 <b>Methods :</b> mixedCase, Verbs
 
-Eg : getName()
+	Eg : getName()
 
 <b>Constants :</b> All Uppercase, Separate words with underscore, Declared with final keyword
 
-Eg : Static final int MAX_NUMB
+	Eg : Static final int MAX_NUMB
 
 <b>Variables :</b> mixedCase, Meaningful and indicative, Start with lower case letter, Do not use underscore
 
-Eg : league
+	Eg : league
 
 <b>Type Parameters :</b> Single Character, captial letters
 
-Eg : E - Element (used extensively by the Java Collections Framework)
+	Eg : E - Element (used extensively by the Java Collections Framework)
 
 ------------------------------------------------------------------------------------
 “Thanks for watching. If you liked this page, make sure to subscribe for more!”
