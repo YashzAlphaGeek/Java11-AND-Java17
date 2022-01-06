@@ -5,6 +5,8 @@ Corretto is a distribution of Open JDK with patches included by Amazon that are 
 
 For Java 17 we need to download Java SE Development Kit 17.0.1 - https://www.oracle.com/java/technologies/downloads/#jdk17-windows
 
+Frequently used Java features are covered as part of this page
+
 ## Java 11 Features :
 
 ### Running Java File with single command
@@ -162,10 +164,12 @@ We can reduce the if else statement into switch case as shown below
 	}
 </code></pre>
 
+<kbd> <img src="https://github.com/YashzAlphaGeek/Java11-AND-Java17/blob/master/Images/Java17SwitchFeature.png"/> </kbd>
+
 ## Info :
 Pattern matching for switch statements and expressions. Since this is a preview feature, we need to use --enable-preview option to enable it.
 
-<kbd> <img src="https://github.com/YashzAlphaGeek/Java11-AND-Java17/blob/master/Images/ReadingAndWritingOfFileOutcome.png"/> </kbd>
+<kbd> <img src="https://github.com/YashzAlphaGeek/Java11-AND-Java17/blob/master/Images/Java17CompilerSwitchPreview.png"/> </kbd>
 
 ## Tips :
 ### Standard Naming Conventions in Java
