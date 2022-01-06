@@ -3,6 +3,8 @@
 For Java 11 we need to download Amazon Corretto - https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html
 Corretto is a distribution of Open JDK with patches included by Amazon that are not yet integrated in the corresponding OpenJDK update projects. We focus on patches that improve performance or stability in OpenJDK, chosen based on Amazon's observations running large services.
 
+For Java 17 we need to download Java SE Development Kit 17.0.1 - https://www.oracle.com/java/technologies/downloads/#jdk17-windows
+
 ## Java 11 Features :
 
 ### Running Java File with single command
@@ -11,8 +13,7 @@ Corretto is a distribution of Open JDK with patches included by Amazon that are 
 <b>java</b> "C:\Users\Yashwanth\Documents\Alpha Geek\Yash_World\JDK11_17\src\com\yash\java\HelloJava11.java"
 </code></pre>
 
-![](https://github.com/YashzAlphaGeek/Java11-AND-Java17/blob/master/Images/SingleJavaCommand.png)
-
+<kbd> <img src="https://github.com/YashzAlphaGeek/Java11-AND-Java17/blob/master/Images/SingleJavaCommand.png"/> </kbd>
 
 ### Java String Methods
 
@@ -60,7 +61,7 @@ The repeat method simply repeats the string that many numbers of times as mentio
 	System.out.println(repeatVal);
 </code></pre>
 
-![](https://github.com/YashzAlphaGeek/Java11-AND-Java17/blob/master/Images/StringMethodsOutcome.png)
+<kbd> <img src="https://github.com/YashzAlphaGeek/Java11-AND-Java17/blob/master/Images/StringMethodsOutcome.png"/> </kbd>
 
 ### Local-Variable Syntax for Lambda Parameters
 
@@ -111,7 +112,60 @@ Java 11 strives to make reading and writing of String convenient
 	System.out.println(s);
 </code></pre>
 
-![](https://github.com/YashzAlphaGeek/Java11-AND-Java17/blob/master/Images/ReadingAndWritingOfFileOutcome.png)
+<kbd> <img src="https://github.com/YashzAlphaGeek/Java11-AND-Java17/blob/master/Images/ReadingAndWritingOfFileOutcome.png"/> </kbd>
+
+## Java 17 Features :
+
+### Pattern Matching for switch
+
+We can reduce the if else statement into switch case as shown below
+
++ if…else chain
+
+<pre><code>
+            public static String test(Object obj) {
+	    return <b>switch(obj)</b> {
+	    case Integer i -> "It is an integer";
+	    case String s -> "It is a string";
+	    default -> "It is none of the known data types";
+	    };
+</code></pre>
+
++ null
+
+<pre><code>
+            public static String test(Object obj) {
+	    return switch(obj) {
+	    case Integer i -> "It is an integer";
+	    case String s -> "It is a string";
+	    <b>case null -> "Null Pointer Exception";</b>
+	    default -> "It is none of the known data types";
+	    };
+</code></pre>
+
++ Refining patterns in switch
+
+<pre><code>
+            public static String test(Object obj) {
+	    return switch(obj) {
+	    case Integer i -> "It is an integer";
+	    case String s -> "It is a string";
+	    case null -> "Null Pointer Exception";
+	    case Boolean bool && <b>bool==true</b> -> performOperation(bool);	    
+	    default -> "It is none of the known data types";
+	    };
+	}
+	
+	public static String performOperation(Boolean bool)
+	{
+		return "Boolean is "+bool;
+	}
+</code></pre>
+
+## Info :
+Pattern matching for switch statements and expressions. Since this is a preview feature, we need to use --enable-preview option to enable it.
+
+<kbd> <img src="https://github.com/YashzAlphaGeek/Java11-AND-Java17/blob/master/Images/ReadingAndWritingOfFileOutcome.png"/> </kbd>
 
 ## Tips :
 ### Standard Naming Conventions in Java
@@ -143,3 +197,10 @@ Eg : league
 <b>Type Parameters :</b> Single Character, captial letters
 
 Eg : E - Element (used extensively by the Java Collections Framework)
+
+------------------------------------------------------------------------------------
+“Thanks for watching. If you liked this page, make sure to subscribe for more!”
+
+	First, solve the problem. Then, write the code. 
+------------------------------------------------------------------------------------
+:grinning:
